@@ -1,0 +1,29 @@
+// mfcdemo.idl : type library source for mfcdemo.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (mfcdemo.tlb).
+
+[ uuid(ef0db8f7-b711-4479-837e-1b0983328b5c), version(1.0) ]
+library mfcdemo
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CmfcdemoDoc
+
+	[ uuid(985fc6a1-2472-43cb-8ced-b2a1fed5ef74) ]
+	dispinterface Imfcdemo
+	{
+		properties:
+
+		methods:
+	};
+
+	//  Class information for CmfcdemoDoc
+
+	[ uuid(3587f3da-e866-489c-88bf-ce66234b3c91) ]
+	coclass mfcdemo
+	{
+		[default] dispinterface Imfcdemo;
+	};
+};

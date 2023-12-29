@@ -1,0 +1,17 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\mfcdemo.Application = mfcdemo Application
+
+
+HKEY_CLASSES_ROOT\mfcdemo.Application\CLSID = {3587f3da-e866-489c-88bf-ce66234b3c91}
+
+HKEY_CLASSES_ROOT\CLSID\{3587f3da-e866-489c-88bf-ce66234b3c91} = mfcdemo Application
+HKEY_CLASSES_ROOT\CLSID\{3587f3da-e866-489c-88bf-ce66234b3c91}\ProgId = mfcdemo.Application
+
+
+HKEY_CLASSES_ROOT\CLSID\{3587f3da-e866-489c-88bf-ce66234b3c91}\LocalServer32 = mfcdemo.EXE
